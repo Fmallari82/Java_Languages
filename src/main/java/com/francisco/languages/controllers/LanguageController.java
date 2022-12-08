@@ -39,6 +39,7 @@ public class LanguageController {
 		model.addAttribute("oneLanguage", oneLanguage );
 		return "showOne.jsp";
 	}
+	//----------------For Lookify assignment----------------------
 	@GetMapping("/search")
 	public String searchLanguage(@RequestParam("search") String Search, Model model) {
 		model.addAttribute("allLanguage", languageServ.searchLanguage(Search));
